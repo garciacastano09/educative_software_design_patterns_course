@@ -1,6 +1,7 @@
-package patterns.creational.builder.models.airplanes;
+package models.airplanes;
 
-import patterns.creational.builder.models.parts.Boeing747Bathroom;
+import models.parts.Boeing747Bathroom;
+import patterns.creational.prototype.AircraftPrototype;
 
 public class Boeing747 extends Aircraft {
 
@@ -12,6 +13,10 @@ public class Boeing747 extends Aircraft {
 
     public void setBoeing747Bathroom(Boeing747Bathroom boeing747Bathroom) {
         this.boeing747Bathroom = boeing747Bathroom;
+    }
+
+    public AircraftPrototype clone() {
+        return new Boeing747();
     }
 
 }

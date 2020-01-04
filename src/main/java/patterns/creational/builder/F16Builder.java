@@ -1,11 +1,10 @@
 package patterns.creational.builder;
 
-import patterns.creational.builder.AircraftBuilder;
-import patterns.creational.builder.models.airplanes.F16;
-import patterns.creational.builder.models.airplanes.Aircraft;
-import patterns.creational.builder.models.parts.F16Cockpit;
-import patterns.creational.builder.models.parts.F16Engine;
-import patterns.creational.builder.models.parts.F16Wings;
+import models.airplanes.F16;
+import models.airplanes.Aircraft;
+import models.parts.F16Cockpit;
+import models.parts.F16Engine;
+import models.parts.F16Wings;
 
 public class F16Builder implements AircraftBuilder {
 

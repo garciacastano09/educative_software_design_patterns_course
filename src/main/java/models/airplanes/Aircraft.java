@@ -1,8 +1,9 @@
-package patterns.creational.builder.models.airplanes;
+package models.airplanes;
 
-import patterns.creational.builder.models.parts.*;
+import models.parts.*;
+import patterns.creational.prototype.AircraftPrototype;
 
-public class Aircraft {
+public class Aircraft implements AircraftPrototype {
 
     private Cockpit cockpit;
     private Engine engine;
@@ -30,5 +31,13 @@ public class Aircraft {
 
     public void setWings(Wings wings) {
         this.wings = wings;
+    }
+
+    public void fly() {
+        System.out.println("Flying");
+    }
+
+    public AircraftPrototype clone() {
+        return new Aircraft();
     }
 }

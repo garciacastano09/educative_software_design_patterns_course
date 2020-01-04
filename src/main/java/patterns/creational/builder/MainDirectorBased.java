@@ -1,6 +1,6 @@
 package patterns.creational.builder;
 
-import patterns.creational.builder.models.airplanes.Aircraft;
+import models.airplanes.Aircraft;
 
 
 public class MainDirectorBased {

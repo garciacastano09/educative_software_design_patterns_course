@@ -1,12 +1,11 @@
 package patterns.creational.builder;
 
-import patterns.creational.builder.AircraftBuilder;
-import patterns.creational.builder.models.airplanes.Boeing747;
-import patterns.creational.builder.models.airplanes.Aircraft;
-import patterns.creational.builder.models.parts.Boeing747Bathroom;
-import patterns.creational.builder.models.parts.Boeing747Cockpit;
-import patterns.creational.builder.models.parts.Boeing747Engine;
-import patterns.creational.builder.models.parts.Boeing747Wings;
+import models.airplanes.Boeing747;
+import models.airplanes.Aircraft;
+import models.parts.Boeing747Bathroom;
+import models.parts.Boeing747Cockpit;
+import models.parts.Boeing747Engine;
+import models.parts.Boeing747Wings;
 
 public class Boeing747Builder implements AircraftBuilder {
 
